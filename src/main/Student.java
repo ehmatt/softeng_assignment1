@@ -4,32 +4,39 @@ public class Student {
 
 	public String name;
 	public int age;
-	public int dob;
+	public String dob;
 	public String id;
 	public String username
-	public ArrayList Courses = new ArrayList(); 
+	public String course;
+	public ArrayList<Module> Modules = new ArrayList<Module>(); 
 
-	public Student() {
-
-	}
-
-	public getName() {
-		return name;
+	public Student(String name, int age, String dob, String id, String course, Module module) {
+		this.name = name;
+        this.age = age;
+        this.dob = dob;
+        this.id = id;
+        this.course = course;
+        this.Modules.add(module);
 	}
 
 	public setName(String name) {
 		this.name = name;
 	}
 
-	public getAge() {
-		return age;
+	public getName() {
+		return name;
 	}
 
 	public setAge(int age) {
 		this.age = age;
 	}
 
+	public getAge() {
+		return age;
+	}
+
 	public getUsername() {
 		username = name + age;
+		return username;
 	}
 }
