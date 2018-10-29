@@ -6,6 +6,7 @@ public class CourseProgramme {
 	public String course_name;
 	public DateTime start_date;
 	public DateTime end_date;
+	public ArrayList<Student> Students = new ArrayList<Student>();
 	public ArrayList<Module> Modules = new ArrayList<Module>();
 
 	public setStartDate(){
