@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class Module {
 
 	public String module_name;
-	public ArrayList<Student> Students = new ArrayList<Student>(); 
-	public ArrayList<CourseProgramme> Courses = new ArrayList<CourseProgramme>();
+	public ArrayList<Student> students = new ArrayList<Student>(); 
+	public ArrayList<CourseProgramme> courses = new ArrayList<CourseProgramme>();
 
 	public Module(String module_name, Student Students, CourseProgramme Courses){
 		this.module_name = module_name;
@@ -18,6 +18,14 @@ public class Module {
 
 	public setName(){
 		this.module_name = module_name;
+	}
+
+	public getStudents(){
+		return students;
+	}
+
+	public getCourses(){
+		return courses;
 	}
 
 

@@ -7,16 +7,16 @@ public class Student {
 	public String dob;
 	public String id;
 	public String username
-	public String course;
-	public ArrayList<Module> Modules = new ArrayList<Module>(); 
+	public ArrayList<CourseProgramme> courses = new ArrayList<CourseProgramme>();
+	public ArrayList<Module> modules = new ArrayList<Module>(); 
 
 	public Student(String name, int age, String dob, String id, String course, Module module) {
 		this.name = name;
         this.age = age;
         this.dob = dob;
         this.id = id;
-        this.course = course;
-        this.Modules.add(module);
+        this.CourseProgramme.add(courses);
+        this.Modules.add(modules);
 	}
 
 	public String getName() {
@@ -38,5 +38,13 @@ public class Student {
 	public String getUsername() {
 		username = name + age;
 		return username;
+	}
+
+	public getModules() {
+		return modules;
+	}
+
+	public getCourses() {
+		return courses;
 	}
 }
