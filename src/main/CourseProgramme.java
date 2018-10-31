@@ -7,13 +7,14 @@ public class CourseProgramme {
 	public DateTime start_date;
 	public DateTime end_date;
 	public ArrayList<Student> students = new ArrayList<Student>();
-	public ArrayList<Module> sodules = new ArrayList<Module>();
+	public ArrayList<Module> modules = new ArrayList<Module>();
 
 	public CourseProgramme(String course_name, DateTime start_date, DateTime end_date){
 		this.course_name = course_name;
 		this.start_date = start_date;
 		this.end_date = end_date;
-
+		this.Students.add(students);
+		this.Module.add(modules);
 	}
 
 	public String getName(){
@@ -28,7 +29,7 @@ public class CourseProgramme {
 		this.start_date = start_date;
 	}
 
-	public getStartDate(){
+	public DateTime getStartDate(){
 		return start_date;
 	}
 
@@ -36,7 +37,7 @@ public class CourseProgramme {
 		this.endDate = end_date;
 	}
 
-	public getEndDate(){
+	public DateTime getEndDate(){
 		return end_date;
 	}
 

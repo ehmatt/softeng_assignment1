@@ -6,7 +6,7 @@ public class Student {
 	public int age;
 	public String dob;
 	public String id;
-	public String username
+	public String username;
 	public ArrayList<CourseProgramme> courses = new ArrayList<CourseProgramme>();
 	public ArrayList<Module> modules = new ArrayList<Module>(); 
 
@@ -36,7 +36,7 @@ public class Student {
 	}
 
 	public String getUsername() {
-		username = name + age;
+		username = name + String.valueOf(age);
 		return username;
 	}
 

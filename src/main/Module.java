@@ -12,19 +12,19 @@ public class Module {
 		this.CourseProgramme.add(Courses);
 	}
 
-	public getName(){
+	public String getName(){
 		return module_name;
 	}
 
-	public setName(){
+	public void setName(){
 		this.module_name = module_name;
 	}
 
-	public getStudents(){
+	public String getStudents(){
 		return students;
 	}
 
-	public getCourses(){
+	public void getCourses(){
 		return courses;
 	}
 
