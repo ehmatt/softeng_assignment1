@@ -19,23 +19,23 @@ public class Student {
         this.Modules.add(module);
 	}
 
-	public getName() {
+	public String getName() {
 		return name;
 	}
 
-	public setName(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public getAge() {
+	public Int getAge() {
 		return age;
 	}
 
-	public setAge(int age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
-	public getUsername() {
+	public String getUsername() {
 		username = name + age;
 		return username;
 	}

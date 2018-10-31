@@ -4,12 +4,12 @@ public class Module {
 
 	public String module_name;
 	public ArrayList<Student> Students = new ArrayList<Student>(); 
-	public ArrayList<CourseProgramme> Course = new ArrayList<CourseProgramme>();
+	public ArrayList<CourseProgramme> Courses = new ArrayList<CourseProgramme>();
 
-	public Module(String module_name, Student students, CourseProgramme course){
+	public Module(String module_name, Student Students, CourseProgramme Courses){
 		this.module_name = module_name;
-		this.Students.add(students);
-		this.CourseProgramme.add(course);
+		this.Students.add(Students);
+		this.CourseProgramme.add(Courses);
 	}
 
 	public getName(){
